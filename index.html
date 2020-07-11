@@ -90,12 +90,12 @@
                         <input type="radio" name="r" id="r1" checked>
                         <input type="radio" name="r" id="r2">
                         <div class="slide s1">
-                            <video class="video" src="assets/img/slider/KAMUBIO.mp4" muted controls
-                                type="video/mp4"></video>
+                            <iframe
+                                src="https://drive.google.com/file/d/171WPuzGTP5cQsW2dkFFNmeflrmw952X1/preview"></iframe>
                         </div>
                         <div class="slide">
-                            <video class="video" src="assets/img/slider/Login-Admin.mp4" muted controls
-                                type="video/mp4"></video>
+                            <iframe
+                                src="https://drive.google.com/file/d/16RHwJXoU83KFig35CZBvS-U1YKu1rS98/preview"></iframe>
                         </div>
                     </div>
                     <div class="navigation">
@@ -171,6 +171,15 @@
         window.addEventListener("scroll", function () {
             let navbar = document.querySelector("nav");
             navbar.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        const boxSlide = document.querySelector('.box-article-dua');
+        const navSlide = document.querySelector('.navigation');
+        boxSlide.addEventListener('mouseenter', function () {
+            navSlide.style.opacity = 1;
+        });
+        boxSlide.addEventListener('mouseleave', function () {
+            navSlide.style.opacity = 0;
         });
     </script>
 </body>
