@@ -367,29 +367,53 @@ main {
 
 .navigation {
     position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
+    bottom: 40%;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.bar {
-    width: 50px;
-    height: 15px;
-    border: 3px solid #000;
+.barsatu {
+    width: 20px;
+    height: 10px;
+    border: 20px solid transparent;
+    border-right: 20px solid black;
+    margin: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bardua {
+    width: 20px;
+    height: 10px;
+    border: 20px solid transparent;
+    border-left: 20px solid black;
+    margin: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.radiobar {
+    position: absolute;
+    display: flex;
+    bottom: 5px;
+    justify-content: center;
+    width: 100%;
+}
+
+.radiobar .radio {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(134, 134, 134);
     border-radius: 10px;
     margin: 6px;
     cursor: pointer;
     transition: .4s;
 }
 
-.bar:hover {
-    background: #5000ca;
-}
-
-input[name="r"] {
-    position: absolute;
-    visibility: hidden;
+#r1:checked~.radiobar .radio:nth-child(1),
+#r2:checked~.radiobar .radio:nth-child(2) {
+    background-color: #000;
 }
 
 .slides {
@@ -406,6 +430,11 @@ input[name="r"] {
 .slide iframe {
     width: 100%;
     height: 100%;
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
 }
 
 #r1:checked~.s1 {
@@ -549,6 +578,22 @@ footer {
     .slide {
         height: 390px;
     }
+
+    .radiobar .radio {
+        width: 15px;
+        height: 15px;
+        border: 2px solid rgb(134, 134, 134);
+        border-radius: 10px;
+        margin: 6px;
+        cursor: pointer;
+        transition: .4s;
+    }
+
+    #r1:checked~.radiobar .radio:nth-child(1),
+    #r2:checked~.radiobar .radio:nth-child(2) {
+        background-color: #fff;
+
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -675,7 +720,7 @@ footer {
     }
 
     .slide {
-        height: 400px;
+        height: 350px;
     }
 
 }
@@ -774,6 +819,10 @@ footer {
 
     header .hero .caption h1 {
         font-size: 38px
+    }
+
+    .slide {
+        height: 250px;
     }
 
     footer {

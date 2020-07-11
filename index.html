@@ -33,7 +33,7 @@
         <div class="hero">
             <div class="caption">
                 <h1><span>Hello</span>..<br> Selamat Datang di<br><span>Website Portfolio</span> Saya</h1>
-                <p>Website ini dibuat oleh saya dalam keadaan sangat sadar,<br>dan dengan data yang
+                <p>Website ini dibuat dalam keadaan sangat sadar,<br>dan dengan data yang
                     sebenar-beneranya.
                 </p>
             </div>
@@ -61,23 +61,23 @@
                         <div class="skills">
                             <span class="nama-skill">css</span>
                             <div class="box-progres">
-                                <div class="value" style="width: 60%;"></div>
-                            </div>
-                            <span class="persen">60%</span>
-                        </div>
-                        <div class="skills">
-                            <span class="nama-skill">javascript</span>
-                            <div class="box-progres">
                                 <div class="value" style="width: 50%;"></div>
                             </div>
                             <span class="persen">50%</span>
                         </div>
                         <div class="skills">
+                            <span class="nama-skill">javascript</span>
+                            <div class="box-progres">
+                                <div class="value" style="width: 40%;"></div>
+                            </div>
+                            <span class="persen">40%</span>
+                        </div>
+                        <div class="skills">
                             <span class="nama-skill">php</span>
                             <div class="box-progres">
-                                <div class="value" style="width: 60%;"></div>
+                                <div class="value" style="width: 50%;"></div>
                             </div>
-                            <span class="persen">60%</span>
+                            <span class="persen">55%</span>
                         </div>
                     </div>
                 </section>
@@ -97,11 +97,16 @@
                             <iframe
                                 src="https://drive.google.com/file/d/16RHwJXoU83KFig35CZBvS-U1YKu1rS98/preview"></iframe>
                         </div>
+                        <div class="radiobar">
+                            <label for="r1" class="radio"></label>
+                            <label for="r2" class="radio"></label>
+                        </div>
                     </div>
                     <div class="navigation">
-                        <label for="r1" class="bar"></label>
-                        <label for="r2" class="bar"></label>
+                        <label for="r1" class="barsatu"></label>
+                        <label for="r2" class="bardua"></label>
                     </div>
+
                 </section>
             </article>
         </div>
@@ -175,11 +180,14 @@
 
         const boxSlide = document.querySelector('.box-article-dua');
         const navSlide = document.querySelector('.navigation');
+        const radioSlide = document.querySelector('.radiobar');
         boxSlide.addEventListener('mouseenter', function () {
             navSlide.style.opacity = 1;
+            radioSlide.style.opacity = 1;
         });
         boxSlide.addEventListener('mouseleave', function () {
             navSlide.style.opacity = 0;
+            radioSlide.style.opacity = 0;
         });
     </script>
 </body>
