@@ -91,7 +91,6 @@
                     <div class="slides">
                         <input type="radio" name="r" id="r1" checked>
                         <input type="radio" name="r" id="r2">
-                        <!-- <input type="radio" name="r" id="r3"> -->
                         <div class="slide s1">
                             <iframe
                                 src="https://drive.google.com/file/d/171WPuzGTP5cQsW2dkFFNmeflrmw952X1/preview"></iframe>
@@ -180,17 +179,17 @@
             navbar.classList.toggle("sticky", window.scrollY > 0);
         });
 
-        // const boxSlide = document.querySelector('.box-article-dua');
-        // const navSlide = document.querySelector('.navigation');
-        // const radioSlide = document.querySelector('.radiobar');
-        // boxSlide.addEventListener('mouseenter', function () {
-        //     navSlide.style.opacity = 1;
-        //     radioSlide.style.opacity = 1;
-        // });
-        // boxSlide.addEventListener('mouseleave', function () {
-        //     navSlide.style.opacity = 0;
-        //     radioSlide.style.opacity = 0;
-        // });
+        const boxSlide = document.querySelector('.box-article-dua');
+        const navSlide = document.querySelector('.navigation');
+        const radioSlide = document.querySelector('.radiobar');
+        boxSlide.addEventListener('mouseenter', function () {
+            navSlide.style.opacity = 1;
+            radioSlide.style.opacity = 1;
+        });
+        boxSlide.addEventListener('mouseleave', function () {
+            navSlide.style.opacity = 0;
+            radioSlide.style.opacity = 0;
+        });
     </script>
 </body>
 
