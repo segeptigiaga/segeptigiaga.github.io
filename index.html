@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <!-- <link rel="stylesheet" href="assets/fontawesome/css/all.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Portfolio</title>
 </head>
 
@@ -23,11 +25,11 @@
             </ul>
 
             <div class="mobile">
-                <a href="#"><i class="fas fa-home fa-lg"><span>Home</span></i></a>
-                <a href="#tentang"><i class="fas fa-address-card fa-lg"><span>Tentang</span></i></a>
-                <a href="#content"><i class="fas fa-chart-bar fa-lg"><span>Skill</span></i></a>
-                <a href="#project"><i class="fas fa-sticky-note fa-lg"><span>Project</span></i></a>
-                <a href="#"><i class="fas fa-arrow-up fa-lg"><span>Ke Atas</span></i></a>
+                <a href="#"><i class="fa fa-home fa-lg"><span>Home</span></i></a>
+                <a href="#tentang"><i class="fa fa-address-card fa-lg"><span>Tentang</span></i></a>
+                <a href="#content"><i class="fa fa-bar-chart fa-lg"><span>Skill</span></i></a>
+                <a href="#project"><i class="fa fa-sticky-note fa-lg"><span>Project</span></i></a>
+                <a href="#"><i class="fa fa-arrow-up fa-lg"><span>Ke Atas</span></i></a>
             </div>
         </nav>
         <div class="hero">
@@ -89,6 +91,7 @@
                     <div class="slides">
                         <input type="radio" name="r" id="r1" checked>
                         <input type="radio" name="r" id="r2">
+                        <!-- <input type="radio" name="r" id="r3"> -->
                         <div class="slide s1">
                             <iframe
                                 src="https://drive.google.com/file/d/171WPuzGTP5cQsW2dkFFNmeflrmw952X1/preview"></iframe>
@@ -106,7 +109,6 @@
                         <label for="r1" class="barsatu"></label>
                         <label for="r2" class="bardua"></label>
                     </div>
-
                 </section>
             </article>
         </div>
@@ -135,10 +137,10 @@
                 <p>English 50%</p>
                 <hr>
                 <span>Kontak</span>
-                <i class="fas fa-phone">
+                <i class="fa fa-phone">
                     <span>081-289-219-367</span>
                 </i>
-                <i class="fas fa-mail-bulk">
+                <i class="fa fa-envelope">
                     <span>egiseptia.official@gmail.com</span>
                 </i>
             </section>
@@ -178,17 +180,17 @@
             navbar.classList.toggle("sticky", window.scrollY > 0);
         });
 
-        const boxSlide = document.querySelector('.box-article-dua');
-        const navSlide = document.querySelector('.navigation');
-        const radioSlide = document.querySelector('.radiobar');
-        boxSlide.addEventListener('mouseenter', function () {
-            navSlide.style.opacity = 1;
-            radioSlide.style.opacity = 1;
-        });
-        boxSlide.addEventListener('mouseleave', function () {
-            navSlide.style.opacity = 0;
-            radioSlide.style.opacity = 0;
-        });
+        // const boxSlide = document.querySelector('.box-article-dua');
+        // const navSlide = document.querySelector('.navigation');
+        // const radioSlide = document.querySelector('.radiobar');
+        // boxSlide.addEventListener('mouseenter', function () {
+        //     navSlide.style.opacity = 1;
+        //     radioSlide.style.opacity = 1;
+        // });
+        // boxSlide.addEventListener('mouseleave', function () {
+        //     navSlide.style.opacity = 0;
+        //     radioSlide.style.opacity = 0;
+        // });
     </script>
 </body>
 
