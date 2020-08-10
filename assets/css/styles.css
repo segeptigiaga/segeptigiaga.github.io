@@ -230,9 +230,9 @@ header .hero .caption {
 header .hero .caption h1 {
     font-family: Montserrat;
     color: #000;
-    font-size: 60px;
+    font-size: 65px;
     font-weight: 200;
-    margin-bottom: 30px
+    margin-bottom: 30px;
 }
 
 header .hero .caption p {
@@ -248,9 +248,10 @@ header .hero .caption h1 span {
 
 header .hero .img-hero {
     position: absolute;
-    right: 120px;
+    right: 90px;
     top: 120px;
-    width: 30%
+    width: 30%;
+    height: 70%;
 }
 
 main {
@@ -566,6 +567,25 @@ footer {
     background-color: #d3d2d2;
     color: #000
 }
+
+/* @media screen and (max-height:700px) {
+    header .hero .img-hero {
+        right: 150px;
+        top: 110px;
+        width: 320px;
+        height: 100px;
+    }
+
+    header .hero .caption h1 {
+        font-size: 45px;
+        margin-left: 100px
+    }
+
+    header .hero .caption p {
+        font-size: 16px;
+        margin-left: 100px
+    }
+} */
 
 @media screen and (max-width:1024px) {
     header .hero .img-hero {
